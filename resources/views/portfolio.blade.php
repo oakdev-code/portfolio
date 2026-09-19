@@ -17,6 +17,7 @@
         .container { width:min(1120px, calc(100% - 40px)); margin:auto; }
         .nav { display:flex; justify-content:space-between; align-items:center; padding:28px 0; }
         .brand { font-family:"DM Mono", monospace; font-size:15px; color:var(--rose); }
+        .brand img { display:block; width:132px; height:auto; }
         .nav-links { display:flex; gap:25px; color:var(--muted); font-size:14px; }
         .nav-links a:hover { color:var(--text); }
         .hero { min-height:680px; display:grid; grid-template-columns:1.2fr .8fr; align-items:center; gap:70px; position:relative; }
@@ -83,7 +84,7 @@
 </head>
 <body>
 <header class="container nav">
-    <a class="brand" href="/">oakdev<span style="color:var(--muted)">();</span></a>
+    <a class="brand" href="/" aria-label="Oakdev — Lucas Carvalho"><img src="{{ asset('images/oakdev-logo.svg') }}" alt="Oakdev"></a>
     <nav class="nav-links" aria-label="Navegação principal">
         <a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#processo">Método</a><a href="#cases">Cases</a><a href="#contato">Contato</a>
     </nav>
