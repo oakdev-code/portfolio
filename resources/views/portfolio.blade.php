@@ -91,7 +91,7 @@
         .case-label { color:var(--rose); font:12px "DM Mono", monospace; text-transform:uppercase; }
         .demo-section { background:#100c0d; }
         .demo-card { min-height:210px; }
-        .demo-result { display:block; color:var(--red); font:500 clamp(34px, 5vw, 52px) "DM Mono", monospace; margin:12px 0 4px; }
+        .demo-result { display:block; color:var(--red); font:500 clamp(26px, 3.4vw, 40px) "DM Mono", monospace; line-height:1.15; margin:16px 0 10px; }
         .signal-bar { display:grid; grid-template-columns:repeat(4,1fr); border:1px solid var(--line); border-radius:12px; background:var(--surface); margin-top:-38px; position:relative; z-index:2; }
         .signal { padding:18px 20px; border-right:1px solid var(--line); }
         .signal:last-child { border-right:0; }
@@ -234,25 +234,25 @@
             <div class="container">
                 <div class="section-label">prévia local · dados fictícios</div>
                 <h2>Como os resultados podem aparecer.</h2>
-                <p class="section-intro">Esta área existe somente no ambiente local para testar a apresentação de cases. Os números abaixo são fictícios e não são publicados.</p>
+                <p class="section-intro">Esta área existe somente no ambiente local para testar a apresentação de cases. Os exemplos abaixo são fictícios e não são publicados.</p>
                 <div class="grid">
                     <article class="card demo-card">
-                        <div class="case-label">Demonstração · automação</div>
-                        <strong class="demo-result">-32%</strong>
-                        <h3>Tempo gasto em tarefas repetitivas</h3>
-                        <p>Exemplo de indicador para mostrar o impacto de um fluxo automatizado.</p>
+                        <div class="case-label">Demonstração · rotina administrativa</div>
+                        <strong class="demo-result">De 2h para 15min</strong>
+                        <h3>Conferência diária de pedidos</h3>
+                        <p>Antes, a equipe conferia dados manualmente em três planilhas. Um fluxo integrado passou a reunir as informações e sinalizar apenas as divergências.</p>
                     </article>
                     <article class="card demo-card">
-                        <div class="case-label">Demonstração · integração</div>
-                        <strong class="demo-result">+41%</strong>
-                        <h3>Visibilidade da operação</h3>
-                        <p>Exemplo de resultado para uma integração entre sistemas e painéis operacionais.</p>
+                        <div class="case-label">Demonstração · integração de sistemas</div>
+                        <strong class="demo-result">Uma visão só</strong>
+                        <h3>Status da operação em tempo real</h3>
+                        <p>Antes, cada área consultava um sistema diferente. A integração reuniu pedidos, estoque e entregas em um único painel para a tomada de decisão.</p>
                     </article>
                     <article class="card demo-card">
                         <div class="case-label">Demonstração · implantação</div>
-                        <strong class="demo-result">3 semanas</strong>
-                        <h3>Da definição à primeira entrega</h3>
-                        <p>Exemplo de prazo para ilustrar uma implantação com escopo bem definido.</p>
+                        <strong class="demo-result">Primeira entrega em 3 semanas</strong>
+                        <h3>Projeto saindo do papel</h3>
+                        <p>O trabalho começou com um escopo pequeno e utilizável. A equipe pôde testar a solução cedo, corrigir o necessário e evoluir com mais segurança.</p>
                     </article>
                 </div>
             </div>
