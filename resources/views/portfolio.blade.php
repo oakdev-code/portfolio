@@ -89,6 +89,9 @@
         .tag { border:1px solid var(--line); border-radius:999px; color:#c9d7e8; padding:8px 13px; font:13px "DM Mono", monospace; background:var(--surface); }
         .case { display:flex; flex-direction:column; justify-content:space-between; min-height:220px; }
         .case-label { color:var(--rose); font:12px "DM Mono", monospace; text-transform:uppercase; }
+        .demo-section { background:#100c0d; }
+        .demo-card { min-height:210px; }
+        .demo-result { display:block; color:var(--red); font:500 clamp(34px, 5vw, 52px) "DM Mono", monospace; margin:12px 0 4px; }
         .signal-bar { display:grid; grid-template-columns:repeat(4,1fr); border:1px solid var(--line); border-radius:12px; background:var(--surface); margin-top:-38px; position:relative; z-index:2; }
         .signal { padding:18px 20px; border-right:1px solid var(--line); }
         .signal:last-child { border-right:0; }
@@ -225,6 +228,36 @@
             </div>
         </div>
     </section>
+
+    @if (app()->environment('local'))
+        <section id="previa-local" class="reveal demo-section">
+            <div class="container">
+                <div class="section-label">prévia local · dados fictícios</div>
+                <h2>Como os resultados podem aparecer.</h2>
+                <p class="section-intro">Esta área existe somente no ambiente local para testar a apresentação de cases. Os números abaixo são fictícios e não são publicados.</p>
+                <div class="grid">
+                    <article class="card demo-card">
+                        <div class="case-label">Demonstração · automação</div>
+                        <strong class="demo-result">-32%</strong>
+                        <h3>Tempo gasto em tarefas repetitivas</h3>
+                        <p>Exemplo de indicador para mostrar o impacto de um fluxo automatizado.</p>
+                    </article>
+                    <article class="card demo-card">
+                        <div class="case-label">Demonstração · integração</div>
+                        <strong class="demo-result">+41%</strong>
+                        <h3>Visibilidade da operação</h3>
+                        <p>Exemplo de resultado para uma integração entre sistemas e painéis operacionais.</p>
+                    </article>
+                    <article class="card demo-card">
+                        <div class="case-label">Demonstração · implantação</div>
+                        <strong class="demo-result">3 semanas</strong>
+                        <h3>Da definição à primeira entrega</h3>
+                        <p>Exemplo de prazo para ilustrar uma implantação com escopo bem definido.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    @endif
 
     <section id="contato" class="reveal">
         <div class="container contact">
