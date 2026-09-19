@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Oakdev — Lucas Carvalho. Desenvolvedor Full Stack, especialista em IA aplicada, automação e implantação de sistemas.">
     <title>Oakdev | Lucas Carvalho</title>
+    <link rel="icon" href="{{ asset('images/favicon.svg') }}" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -105,7 +106,7 @@
             </div>
         </div>
         <div class="profile-card" aria-label="Resumo profissional">
-            <img class="profile-photo" src="{{ asset('images/oakdev-profile.jpg') }}" alt="Oakdev — Lucas Carvalho">
+            <img class="profile-photo" src="{{ asset('images/oakdev-profile.png') }}" alt="Oakdev — Lucas Carvalho">
             <div class="profile-heading">Quem está por trás da Oakdev</div>
             <div class="profile-name">Lucas Carvalho</div>
             <p class="profile-copy">Analista de sistemas, desenvolvedor e alguém que gosta de entender a operação antes de escolher a tecnologia.</p>
