@@ -26,6 +26,14 @@ php artisan serve
 
 Acesse `http://127.0.0.1:8000`.
 
+## Versão pública
+
+A landing page estática é publicada automaticamente no GitHub Pages a partir de `docs/`:
+
+https://oakdev-code.github.io/portfolio/
+
+O Laravel continua sendo a fonte principal do projeto. Sempre que a apresentação pública mudar, atualize também `docs/index.html` e envie para a branch `main`.
+
 ## Próximas etapas
 
 1. criar painel administrativo protegido
