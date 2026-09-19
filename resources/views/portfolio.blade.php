@@ -18,7 +18,7 @@
         .container { width:min(1120px, calc(100% - 40px)); margin:auto; }
         .nav { display:flex; justify-content:space-between; align-items:center; padding:28px 0; }
         .brand { font-family:"DM Mono", monospace; font-size:15px; color:var(--rose); }
-        .brand img { display:block; width:132px; height:auto; }
+        .brand img { display:block; width:178px; height:auto; }
         .nav-links { display:flex; gap:25px; color:var(--muted); font-size:14px; }
         .nav-links a:hover { color:var(--text); }
         .hero { min-height:680px; display:grid; grid-template-columns:1.2fr .8fr; align-items:center; gap:70px; position:relative; }
@@ -34,7 +34,7 @@
         .button:hover { transform:translateY(-3px); box-shadow:0 10px 25px #f0445233; }
         .profile-card { background:#100c0d; border:1px solid var(--line); border-radius:14px; padding:25px; box-shadow:0 25px 80px #0008; animation:float 5s ease-in-out infinite; }
         .profile-card::after { content:""; display:block; height:2px; width:48%; margin-top:24px; background:linear-gradient(90deg, var(--red), transparent); }
-        .profile-photo { width:92px; height:92px; object-fit:cover; object-position:center; border-radius:50%; border:3px solid var(--red); box-shadow:0 0 0 6px #f0445218; margin-bottom:16px; }
+        .profile-photo { width:118px; height:118px; object-fit:cover; object-position:center; border-radius:50%; border:3px solid var(--red); box-shadow:0 0 0 6px #f0445218; margin-bottom:16px; background:#241016; }
         .profile-heading { color:var(--rose); font:500 12px "DM Mono", monospace; letter-spacing:.1em; text-transform:uppercase; }
         .profile-name { font-size:27px; font-weight:800; margin:13px 0 18px; }
         .profile-copy { color:var(--muted); font-size:15px; margin:0; }
@@ -106,7 +106,7 @@
             </div>
         </div>
         <div class="profile-card" aria-label="Resumo profissional">
-            <img class="profile-photo" src="{{ asset('images/oakdev-profile.png') }}" alt="Oakdev — Lucas Carvalho">
+            <img class="profile-photo" src="{{ asset('images/oakdev-profile-branded.png') }}" alt="Oakdev — Lucas Carvalho">
             <div class="profile-heading">Quem está por trás da Oakdev</div>
             <div class="profile-name">Lucas Carvalho</div>
             <p class="profile-copy">Analista de sistemas, desenvolvedor e alguém que gosta de entender a operação antes de escolher a tecnologia.</p>

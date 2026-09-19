@@ -1,51 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" width="100%" height="100%">
-  <defs>
-    <!-- Red gradient for the 'dev' part and accent -->
-    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF1E1E" />
-      <stop offset="100%" stop-color="#C70039" />
-    </linearGradient>
-    
-    <!-- Subtle drop shadow for depth -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#FF1E1E" flood-opacity="0.3"/>
-    </filter>
-  </defs>
-
-  <!-- Background is transparent as requested -->
-
-  <!-- Logo Group -->
-  <g transform="translate(30, 20)">
-    
-    <!-- Opening code bracket < -->
-    <path d="M 15 35 L 0 52.5 L 15 70" 
-          fill="none" 
-          stroke="#FF1E1E" 
-          stroke-width="7" 
-          stroke-linecap="round" 
-          stroke-linejoin="round"
-          filter="url(#glow)" />
-
-    <!-- Text: oakdev -->
-    <!-- 'oak' in sleek black/dark gray, 'dev' in vibrant red gradient -->
-    <text x="35" y="65" 
-          font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
-          font-size="52" 
-          font-weight="800" 
-          letter-spacing="1px">
-      <tspan fill="#FFFFFF">oak</tspan><tspan fill="url(#redGradient)">dev</tspan>
-    </text>
-
-    <!-- Closing code bracket > with a slash /> simulating self-closing tag or terminal cursor -->
-    <path d="M 235 35 L 250 52.5 L 235 70" 
-          fill="none" 
-          stroke="#FF1E1E" 
-          stroke-width="7" 
-          stroke-linecap="round" 
-          stroke-linejoin="round"
-          filter="url(#glow)" />
-
-    <!-- Terminal cursor underscore under 'dev' or subtle tech underline -->
-    <rect x="155" y="85" width="75" height="4" rx="2" fill="url(#redGradient)" />
-  </g>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#100c0d"/>
+  <path d="M20 16 9 32l11 16M44 16l11 16-11 16" fill="none" stroke="#ff1e1e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="32" y="41" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="22" font-weight="800">o</text>
+  <rect x="29" y="48" width="17" height="3" rx="1.5" fill="#c70039"/>
 </svg>
