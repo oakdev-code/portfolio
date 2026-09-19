@@ -126,7 +126,7 @@
     <a class="brand" href="/" aria-label="Oakdev — Lucas Carvalho"><img src="{{ asset('images/oakdev-logo.svg') }}" alt="Oakdev"></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
     <nav id="menu-principal" class="nav-links" aria-label="Navegação principal">
-        <a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#processo">Método</a><a href="#cases">Cases</a><a href="#contato">Contato</a>
+        <a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#ideias">Ideias</a><a href="#processo">Método</a><a href="#cases">Cases</a><a href="#contato">Contato</a>
     </nav>
 </header>
 
@@ -203,9 +203,25 @@
         </div>
     </section>
 
+    <section id="ideias" class="reveal">
+        <div class="container">
+            <div class="section-label">04 / possibilidades</div>
+            <h2>Algumas ideias para tirar do papel.</h2>
+            <p class="section-intro">Nem todo projeto começa com uma especificação pronta. Estas são algumas possibilidades de solução para problemas comuns de empresas, profissionais e produtos digitais.</p>
+            <div class="grid">
+                <article class="card"><div class="icon">01</div><h3>Site que apresenta e converte</h3><p>Uma presença profissional para explicar seu trabalho, mostrar serviços e transformar visitas em conversas.</p></article>
+                <article class="card"><div class="icon">02</div><h3>Landing page para uma oferta</h3><p>Uma página objetiva para divulgar um serviço, curso, produto digital ou lançamento e orientar o próximo passo.</p></article>
+                <article class="card"><div class="icon">03</div><h3>Área de membros</h3><p>Um espaço para entregar cursos, materiais, comunidade ou acompanhamento com acesso organizado.</p></article>
+                <article class="card"><div class="icon">04</div><h3>Sistema para substituir planilhas</h3><p>Uma aplicação sob medida para organizar clientes, pedidos, agenda, tarefas ou informações da rotina.</p></article>
+                <article class="card"><div class="icon">05</div><h3>Ferramentas que conversam</h3><p>Integrações entre formulário, CRM, pagamento, e-mail, WhatsApp ou outras ferramentas que você já usa.</p></article>
+                <article class="card"><div class="icon">06</div><h3>Painel para enxergar o negócio</h3><p>Um dashboard que reúne dados importantes e transforma informação espalhada em acompanhamento mais simples.</p></article>
+            </div>
+        </div>
+    </section>
+
     <section id="processo" class="reveal">
         <div class="container">
-            <div class="section-label">04 / método Oakdev</div>
+            <div class="section-label">05 / método Oakdev</div>
             <h2>Da ideia ao próximo passo.</h2>
             <div class="process">
                 <div class="process-step"><span class="service-number">01</span><strong>Entender</strong><p>Conversar sobre o objetivo, o público e o problema que precisa ser resolvido.</p></div>
@@ -218,7 +234,7 @@
 
     <section id="cases" class="reveal">
         <div class="container">
-            <div class="section-label">05 / experiência</div>
+            <div class="section-label">06 / experiência</div>
             <h2>Cases e frentes de trabalho.</h2>
             <p class="section-intro">Nem todo projeto pode ser publicado. Ainda assim, é possível explicar o tipo de problema, a solução construída e como o trabalho melhora a operação sem expor informações sensíveis.</p>
             <div class="grid">
@@ -261,7 +277,7 @@
 
     <section id="contato" class="reveal">
         <div class="container contact">
-            <div>            <div class="section-label">06 / contato</div><h2>Vamos tirar sua ideia do papel.</h2><p class="section-intro">Conte o que você quer criar, melhorar ou automatizar. A primeira conversa serve para entender o cenário e identificar um próximo passo possível.</p></div>
+            <div>            <div class="section-label">07 / contato</div><h2>Vamos tirar sua ideia do papel.</h2><p class="section-intro">Conte o que você quer criar, melhorar ou automatizar. A primeira conversa serve para entender o cenário e identificar um próximo passo possível.</p></div>
             <a class="button primary" href="mailto:luccaosilva10@gmail.com">luccaosilva10@gmail.com ↗</a>
         </div>
     </section>
