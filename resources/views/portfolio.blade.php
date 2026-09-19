@@ -43,12 +43,16 @@
         html { scroll-behavior:smooth; }
         body { margin:0; background:var(--bg); color:var(--text); font-family:Manrope, sans-serif; line-height:1.6; }
         a { color:inherit; text-decoration:none; }
+        :focus-visible { outline:2px solid var(--rose); outline-offset:4px; }
+        .skip-link { position:absolute; left:16px; top:-60px; z-index:10; background:var(--red); color:#fff; padding:10px 14px; border-radius:6px; font-weight:700; }
+        .skip-link:focus { top:16px; }
         .container { width:min(1120px, calc(100% - 40px)); margin:auto; }
         .nav { display:flex; justify-content:space-between; align-items:center; padding:28px 0; }
         .brand { font-family:"DM Mono", monospace; font-size:15px; color:var(--rose); }
         .brand img { display:block; width:178px; height:auto; }
         .nav-links { display:flex; gap:25px; color:var(--muted); font-size:14px; }
         .nav-links a:hover { color:var(--text); }
+        .menu-toggle { display:none; border:1px solid var(--line); background:var(--surface); color:var(--text); border-radius:7px; padding:9px 12px; font:500 13px "DM Mono", monospace; cursor:pointer; }
         .hero { min-height:680px; display:grid; grid-template-columns:1.2fr .8fr; align-items:center; gap:70px; position:relative; }
         .hero::before { content:""; position:absolute; inset:10% 0 auto; height:1px; background:linear-gradient(90deg, transparent, var(--line), transparent); opacity:.7; }
         .eyebrow { color:var(--rose); font:500 13px "DM Mono", monospace; letter-spacing:.08em; text-transform:uppercase; }
@@ -106,20 +110,24 @@
         .orb { position:absolute; width:420px; height:420px; border-radius:50%; background:radial-gradient(circle, #f044521f, transparent 68%); top:35px; right:-130px; pointer-events:none; animation:pulse 6s ease-in-out infinite; }
         .reveal { opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
         .reveal.visible { opacity:1; transform:none; }
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } *, *::before, *::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; scroll-behavior:auto !important; transition-duration:.01ms !important; } .reveal { opacity:1; transform:none; } }
         @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-9px); } }
         @keyframes pulse { 0%,100% { transform:scale(1); opacity:.7; } 50% { transform:scale(1.15); opacity:1; } }
-        @media (max-width:760px) { .nav-links { display:none; } .hero { grid-template-columns:1fr; min-height:auto; padding:65px 0 90px; gap:45px; } .grid,.service-grid { grid-template-columns:1fr; } .signal-bar,.process { grid-template-columns:1fr 1fr; } .signal:nth-child(2) { border-right:0; } .signal:nth-child(-n+2) { border-bottom:1px solid var(--line); } .process-step { border-right:0; border-bottom:1px solid var(--line); padding-bottom:20px; margin-right:0; } .contact, footer { flex-direction:column; align-items:flex-start; } section { padding:65px 0; } }
+        @media (max-width:760px) { .nav { padding:20px 0; } .brand img { width:150px; } .menu-toggle { display:block; } .nav-links { display:none; position:absolute; left:20px; right:20px; top:76px; z-index:5; flex-direction:column; gap:0; padding:8px; background:var(--surface); border:1px solid var(--line); border-radius:10px; box-shadow:0 18px 45px #0009; } .nav-links.open { display:flex; } .nav-links a { padding:12px; border-radius:6px; } .nav-links a:hover { background:var(--surface-2); } .hero { grid-template-columns:1fr; min-height:auto; padding:65px 0 90px; gap:45px; } .grid,.service-grid { grid-template-columns:1fr; } .signal-bar,.process { grid-template-columns:1fr 1fr; } .signal:nth-child(2) { border-right:0; } .signal:nth-child(-n+2) { border-bottom:1px solid var(--line); } .process-step { border-right:0; border-bottom:1px solid var(--line); padding-bottom:20px; margin-right:0; } .contact, footer { flex-direction:column; align-items:flex-start; } .contact { padding:28px; } .contact .button { width:100%; text-align:center; } section { padding:65px 0; } }
+        @media (max-width:420px) { .container { width:min(100% - 28px, 1120px); } h1 { font-size:clamp(42px, 14vw, 58px); } .signal strong { font-size:18px; } .signal { padding:15px 12px; } }
     </style>
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 <header class="container nav">
     <a class="brand" href="/" aria-label="Oakdev — Lucas Carvalho"><img src="{{ asset('images/oakdev-logo.svg') }}" alt="Oakdev"></a>
-    <nav class="nav-links" aria-label="Navegação principal">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+    <nav id="menu-principal" class="nav-links" aria-label="Navegação principal">
         <a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#processo">Método</a><a href="#cases">Cases</a><a href="#contato">Contato</a>
     </nav>
 </header>
 
-<main>
+<main id="conteudo">
     <section class="container hero">
         <div class="orb"></div>
         <div>
@@ -129,8 +137,8 @@
             <div class="availability">Disponível para projetos selecionados</div>
             <div class="actions">
                 <a class="button primary" href="#contato">Vamos conversar →</a>
-                <a class="button" href="https://github.com/oakdev-code" target="_blank" rel="noreferrer">GitHub ↗</a>
-                <a class="button" href="https://www.linkedin.com/in/lucas-carvalho-726b97165/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+                <a class="button" href="https://github.com/oakdev-code" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                <a class="button" href="https://www.linkedin.com/in/lucas-carvalho-726b97165/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
             </div>
         </div>
         <div class="profile-card" aria-label="Resumo profissional">
@@ -248,6 +256,17 @@
         });
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('menu-principal');
+    menuToggle.addEventListener('click', () => {
+        const isOpen = menu.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+    menu.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+        menu.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+    }));
 </script>
 </body>
 </html>
