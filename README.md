@@ -17,6 +17,7 @@ Apresentar experiência, stack, IA aplicada, automação, implantação e servi�
 - cases públicos e confidenciais descritos com responsabilidade
 - links de LinkedIn, GitHub e e-mail
 - Laravel 12 com SQLite
+- roadmap persistente para futuras melhorias em `docs/roadmap.md`
 
 ## Desenvolvimento local
 
@@ -34,6 +35,10 @@ A landing page estática é publicada automaticamente no GitHub Pages a partir d
 https://oakdev-code.github.io/portfolio/
 
 O Laravel continua sendo a fonte principal do projeto. Sempre que a apresentação pública mudar, atualize também `docs/index.html` e envie para a branch `main`. O GitHub Pages republica a versão estática automaticamente.
+
+## Contexto para futuras sessões
+
+Antes de continuar o desenvolvimento, leia [docs/roadmap.md](docs/roadmap.md) e [.github/copilot-instructions.md](.github/copilot-instructions.md). Esses arquivos registram o estado atual, as próximas melhorias e as regras para agentes de IA.
 
 ## Próximas etapas
 
