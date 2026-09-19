@@ -30,8 +30,14 @@
         .button { border:1px solid var(--line); border-radius:8px; padding:13px 18px; font-weight:700; font-size:14px; }
         .button.primary { background:var(--red); border-color:var(--red); color:#fff; }
         .button:hover { transform:translateY(-3px); box-shadow:0 10px 25px #f0445233; }
-        .terminal { background:#100c0d; border:1px solid var(--line); border-radius:14px; padding:20px; box-shadow:0 25px 80px #0008; font:14px/1.8 "DM Mono", monospace; color:#d7c5c8; animation:float 5s ease-in-out infinite; }
-        .terminal::after { content:""; display:block; height:2px; width:48%; margin-top:20px; background:linear-gradient(90deg, var(--red), transparent); }
+        .profile-card { background:#100c0d; border:1px solid var(--line); border-radius:14px; padding:25px; box-shadow:0 25px 80px #0008; animation:float 5s ease-in-out infinite; }
+        .profile-card::after { content:""; display:block; height:2px; width:48%; margin-top:24px; background:linear-gradient(90deg, var(--red), transparent); }
+        .profile-heading { color:var(--rose); font:500 12px "DM Mono", monospace; letter-spacing:.1em; text-transform:uppercase; }
+        .profile-name { font-size:27px; font-weight:800; margin:13px 0 18px; }
+        .profile-copy { color:var(--muted); font-size:15px; margin:0; }
+        .profile-list { list-style:none; padding:0; margin:22px 0 0; display:grid; gap:11px; }
+        .profile-list li { color:#eadde0; font:13px "DM Mono", monospace; }
+        .profile-list li::before { content:"+"; color:var(--red); margin-right:10px; }
         .terminal-top { display:flex; gap:7px; margin-bottom:22px; }
         .dot { width:9px; height:9px; border-radius:50%; background:#ef767a; } .dot:nth-child(2){background:#f6c453}.dot:nth-child(3){background:var(--red)}
         .prompt { color:var(--rose); } .value { color:#fff5f5; }
@@ -96,16 +102,16 @@
                 <a class="button" href="https://www.linkedin.com/in/lucas-carvalho-726b97165/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
             </div>
         </div>
-        <div class="terminal" aria-label="Resumo profissional">
-            <div class="terminal-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
-            <div><span class="prompt">$ whoami</span></div>
-            <div class="value">Oakdev // Lucas Carvalho</div>
-            <br>
-            <div><span class="prompt">$ focus --list</span></div>
-            <div class="value">→ Software & APIs</div>
-            <div class="value">→ IA & Agent workflows</div>
-            <div class="value">→ Automation & Integrations</div>
-            <div class="value">→ Client deployments</div>
+        <div class="profile-card" aria-label="Resumo profissional">
+            <div class="profile-heading">Quem está por trás da Oakdev</div>
+            <div class="profile-name">Lucas Carvalho</div>
+            <p class="profile-copy">Analista de sistemas, desenvolvedor e alguém que gosta de entender a operação antes de escolher a tecnologia.</p>
+            <ul class="profile-list">
+                <li>Desenvolvimento de sistemas e APIs</li>
+                <li>Automação de processos</li>
+                <li>Integração entre sistemas</li>
+                <li>Implantação para clientes</li>
+            </ul>
         </div>
     </section>
     <div class="container signal-bar reveal" aria-label="Resumo profissional">
