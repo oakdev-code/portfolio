@@ -132,7 +132,7 @@
         <div class="orb"></div>
         <div>
             <div class="eyebrow">Oakdev · Lucas Carvalho</div>
-            <h1>Faço a operação <span id="dynamic-title">andar melhor.</span></h1>
+            <h1>Faço a operação <span id="dynamic-title" aria-live="polite">andar melhor.</span></h1>
             <p class="lead">Sou Lucas Carvalho, analista de sistemas com 7+ anos de experiência em desenvolvimento, integração, automação e implantação de soluções para operações reais.</p>
             <div class="availability">Disponível para projetos selecionados</div>
             <div class="actions">
@@ -238,14 +238,16 @@
     const phrases = ['andar melhor.', 'ganhar clareza.', 'deixar o trabalho mais simples.'];
     const dynamicTitle = document.getElementById('dynamic-title');
     let phraseIndex = 0;
-    setInterval(() => {
-        phraseIndex = (phraseIndex + 1) % phrases.length;
-        dynamicTitle.style.opacity = '0';
-        setTimeout(() => {
-            dynamicTitle.textContent = phrases[phraseIndex];
-            dynamicTitle.style.opacity = '1';
-        }, 220);
-    }, 3200);
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        setInterval(() => {
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            dynamicTitle.style.opacity = '0';
+            setTimeout(() => {
+                dynamicTitle.textContent = phrases[phraseIndex];
+                dynamicTitle.style.opacity = '1';
+            }, 220);
+        }, 3200);
+    }
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -267,6 +269,13 @@
         menu.classList.remove('open');
         menuToggle.setAttribute('aria-expanded', 'false');
     }));
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && menu.classList.contains('open')) {
+            menu.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.focus();
+        }
+    });
 </script>
 </body>
 </html>

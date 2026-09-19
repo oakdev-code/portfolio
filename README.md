@@ -11,6 +11,7 @@ Apresentar experiência, stack, IA aplicada, automação, implantação e servi�
 ## Estado atual
 
 - landing page pública responsiva
+- navegação mobile acessível e suporte a preferência de movimento reduzido
 - apresentação profissional
 - expertise e tecnologias
 - cases públicos e confidenciais descritos com responsabilidade
