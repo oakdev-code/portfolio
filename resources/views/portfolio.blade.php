@@ -136,7 +136,7 @@
         <div>
             <div class="eyebrow">Oakdev · Lucas Carvalho</div>
             <h1>Faço a operação <span id="dynamic-title" aria-live="polite">andar melhor.</span></h1>
-            <p class="lead">Sou Lucas Carvalho, analista de sistemas com 7+ anos de experiência em desenvolvimento, integração, automação e implantação de soluções para operações reais.</p>
+            <p class="lead">Sou Lucas Carvalho, analista de sistemas. Ajudo empresas a tirar tarefas manuais do caminho, conectar informações e colocar sistemas para funcionar na rotina.</p>
             <div class="availability">Disponível para projetos selecionados</div>
             <div class="actions">
                 <a class="button primary" href="#contato">Vamos conversar →</a>
@@ -148,12 +148,12 @@
             <img class="profile-photo" src="{{ asset('images/oakdev-profile.jpg') }}" alt="Oakdev — Lucas Carvalho">
             <div class="profile-heading">Quem está por trás da Oakdev</div>
             <div class="profile-name">Lucas Carvalho</div>
-            <p class="profile-copy">Analista de sistemas, desenvolvedor e alguém que gosta de entender a operação antes de escolher a tecnologia.</p>
+            <p class="profile-copy">Entendo como o trabalho acontece antes de escolher a tecnologia. Meu foco é transformar problemas operacionais em soluções que a equipe consiga usar e manter.</p>
             <ul class="profile-list">
-                <li>Desenvolvimento de sistemas e APIs</li>
-                <li>Automação de processos</li>
-                <li>Integração entre sistemas</li>
-                <li>Implantação para clientes</li>
+                <li>Sistemas para rotinas de negócio</li>
+                <li>Automação de tarefas repetitivas</li>
+                <li>Integração de informações</li>
+                <li>Implantação e acompanhamento</li>
             </ul>
         </div>
     </section>
@@ -168,11 +168,11 @@
         <div class="container">
             <div class="section-label">01 / sobre</div>
             <h2>Experiência aplicada,<br>não só teoria.</h2>
-            <p class="section-intro">Atuo do entendimento do problema à entrega em produção: análise, desenvolvimento, integração, implantação e sustentação. Muitos projetos são corporativos e confidenciais; por isso, aqui apresento capacidades e cases sem expor código ou dados de clientes.</p>
+            <p class="section-intro">Começo entendendo onde a operação perde tempo, informação ou controle. A partir daí, analiso o processo, construo a solução, conecto o que for necessário e acompanho a entrega. Projetos corporativos podem ser confidenciais; por isso, apresento capacidades sem expor código ou dados de clientes.</p>
             <div class="grid">
-                <article class="card"><div class="icon">01</div><h3>Desenvolvimento</h3><p>Aplicações web, APIs e soluções full stack com foco em clareza, manutenção e valor para o negócio.</p></article>
-                <article class="card"><div class="icon">02</div><h3>IA e automação</h3><p>Criação de skills, agents e workflows com Claude Code, Gemini, ChatGPT e ferramentas de produtividade.</p></article>
-                <article class="card"><div class="icon">03</div><h3>Implantação</h3><p>Configuração, integração e entrega de sistemas em ambientes reais, com foco em estabilidade e operação.</p></article>
+                <article class="card"><div class="icon">01</div><h3>Sistemas para o negócio</h3><p>Aplicações web e APIs para organizar informações, reduzir controles paralelos e apoiar a rotina da equipe.</p></article>
+                <article class="card"><div class="icon">02</div><h3>Automação com propósito</h3><p>Uso IA e integrações para eliminar etapas repetitivas, acelerar consultas e deixar o trabalho mais previsível.</p></article>
+                <article class="card"><div class="icon">03</div><h3>Entrega em produção</h3><p>Configuro, publico e acompanho a solução para que ela funcione no ambiente real, não apenas em demonstração.</p></article>
             </div>
         </div>
     </section>
@@ -181,7 +181,7 @@
         <div class="container">
             <div class="section-label">02 / expertise</div>
             <h2>Ferramentas para transformar<br>ideias em operação.</h2>
-            <p class="section-intro">Uma stack pragmática para construir, testar, integrar e colocar soluções para funcionar.</p>
+            <p class="section-intro">Escolho as ferramentas de acordo com o problema: construir a solução, conectar sistemas, automatizar uma etapa ou dar mais visibilidade à operação.</p>
             <div class="stack">
                 @foreach (['PHP', 'Laravel', 'JavaScript', 'HTML & CSS', 'SQL', 'Docker', 'REST APIs', 'Git & GitHub', 'Claude Code', 'Gemini', 'ChatGPT', 'Skills & Agents', 'Automação', 'Logística'] as $technology)
                     <span class="tag">{{ $technology }}</span>
@@ -194,11 +194,11 @@
         <div class="container">
             <div class="section-label">03 / como posso ajudar</div>
             <h2>Problema primeiro.<br>Tecnologia depois.</h2>
-            <p class="section-intro">Não vendo uma tecnologia isolada. Entendo o processo, encontro o gargalo e construo uma solução que possa ser usada, mantida e evoluída.</p>
+            <p class="section-intro">Você não precisa começar sabendo qual tecnologia usar. Eu entendo o processo, encontro o gargalo e proponho uma solução que possa ser usada, mantida e evoluída.</p>
             <div class="service-grid">
-                <article class="card service-card featured"><div><div class="service-number">01 — OPERAÇÃO</div><h3>Automação de processos</h3><p>Transformar tarefas repetitivas, planilhas e integrações manuais em fluxos confiáveis que economizam tempo da operação.</p></div><span class="tag">Processos → sistemas</span></article>
-                <article class="card service-card"><div><div class="service-number">02 — SOFTWARE</div><h3>Sistemas e APIs</h3><p>Construção e evolução de aplicações web, integrações e APIs para problemas concretos de negócio.</p></div><span class="tag">Laravel · PHP</span></article>
-                <article class="card service-card"><div><div class="service-number">03 — ENTREGA</div><h3>Implantação</h3><p>Configuração, publicação e sustentação para colocar a solução em funcionamento.</p></div><span class="tag">Ambiente real</span></article>
+                <article class="card service-card featured"><div><div class="service-number">01 — OPERAÇÃO</div><h3>Automação de processos</h3><p>Transformo tarefas repetitivas, planilhas e conferências manuais em fluxos que avisam, organizam e deixam a equipe focada no que exige decisão.</p></div><span class="tag">Menos retrabalho</span></article>
+                <article class="card service-card"><div><div class="service-number">02 — SOFTWARE</div><h3>Sistemas e integrações</h3><p>Construo aplicações, APIs e conexões para reunir informações que hoje estão espalhadas ou dependem de controles paralelos.</p></div><span class="tag">Informação conectada</span></article>
+                <article class="card service-card"><div><div class="service-number">03 — ENTREGA</div><h3>Implantação</h3><p>Coloco a solução no ambiente real, acompanho os primeiros usos e ajusto o necessário para ela entrar na rotina.</p></div><span class="tag">Da ideia ao uso</span></article>
             </div>
         </div>
     </section>
@@ -208,10 +208,10 @@
             <div class="section-label">04 / método Oakdev</div>
             <h2>Do caos ao próximo passo.</h2>
             <div class="process">
-                <div class="process-step"><span class="service-number">01</span><strong>Entender</strong><p>Mapear o problema, a operação e o resultado esperado.</p></div>
-                <div class="process-step"><span class="service-number">02</span><strong>Desenhar</strong><p>Escolher a solução mais simples que resolve de verdade.</p></div>
-                <div class="process-step"><span class="service-number">03</span><strong>Construir</strong><p>Desenvolver com clareza, testes e contexto para evoluir.</p></div>
-                <div class="process-step"><span class="service-number">04</span><strong>Entregar</strong><p>Implantar, acompanhar e melhorar com a operação.</p></div>
+                <div class="process-step"><span class="service-number">01</span><strong>Entender</strong><p>Conversar com quem executa a rotina e localizar o ponto que mais trava o trabalho.</p></div>
+                <div class="process-step"><span class="service-number">02</span><strong>Desenhar</strong><p>Definir uma solução possível, começando pelo que traz clareza e utilidade primeiro.</p></div>
+                <div class="process-step"><span class="service-number">03</span><strong>Construir</strong><p>Desenvolver, testar e explicar a solução para que ela possa continuar evoluindo.</p></div>
+                <div class="process-step"><span class="service-number">04</span><strong>Entregar</strong><p>Colocar em uso, observar a rotina e medir o que pode ser melhorado.</p></div>
             </div>
         </div>
     </section>
@@ -220,11 +220,11 @@
         <div class="container">
             <div class="section-label">05 / experiência</div>
             <h2>Cases e frentes de trabalho.</h2>
-            <p class="section-intro">Projetos empresariais podem ser confidenciais. A experiência, os desafios e os resultados continuam podendo ser apresentados com responsabilidade.</p>
+            <p class="section-intro">Nem todo projeto pode ser publicado. Ainda assim, é possível explicar o tipo de problema, a solução construída e como o trabalho melhora a operação sem expor informações sensíveis.</p>
             <div class="grid">
-                <article class="card case"><div><div class="case-label">Case confidencial · logística</div><h3>Operações integradas</h3><p>Desenvolvimento e sustentação de soluções para processos logísticos, integrações e eficiência operacional.</p></div><span class="tag">Produção</span></article>
-                <article class="card case"><div><div class="case-label">Projeto pessoal · em construção</div><h3>Portfolio CMS</h3><p>Este portfólio está sendo construído com Laravel para publicar projetos, skills, serviços e conteúdo técnico.</p></div><span class="tag">Laravel</span></article>
-                <article class="card case"><div><div class="case-label">Projeto pessoal · em construção</div><h3>Workspace Orchestrator</h3><p>CLI para organizar contexto de workspaces e preparar informações para agentes de IA.</p></div><span class="tag">IA · TypeScript</span></article>
+                <article class="card case"><div><div class="case-label">Case confidencial · logística</div><h3>Informação para a operação</h3><p>Soluções para conectar etapas do processo logístico, reduzir consultas espalhadas e apoiar decisões do dia a dia.</p></div><span class="tag">Integração · produção</span></article>
+                <article class="card case"><div><div class="case-label">Projeto pessoal · em construção</div><h3>Portfolio CMS</h3><p>Uma base em Laravel para organizar projetos, serviços e conteúdo em um só lugar, facilitando futuras atualizações do portfólio.</p></div><span class="tag">Laravel</span></article>
+                <article class="card case"><div><div class="case-label">Projeto pessoal · em construção</div><h3>Workspace Orchestrator</h3><p>Uma ferramenta que organiza o contexto de cada projeto para reduzir informações repetidas e orientar melhor o trabalho com agentes de IA.</p></div><span class="tag">IA · TypeScript</span></article>
             </div>
         </div>
     </section>
@@ -261,7 +261,7 @@
 
     <section id="contato" class="reveal">
         <div class="container contact">
-            <div>            <div class="section-label">06 / contato</div><h2>Tem um problema para resolver?</h2><p class="section-intro">Vamos conversar sobre automação, desenvolvimento ou implantação de uma solução.</p></div>
+            <div>            <div class="section-label">06 / contato</div><h2>Vamos entender o que está travando sua operação.</h2><p class="section-intro">Conte o que hoje depende de planilhas, conferências manuais ou informações espalhadas. A primeira conversa serve para entender o cenário e identificar um próximo passo possível.</p></div>
             <a class="button primary" href="mailto:luccaosilva10@gmail.com">luccaosilva10@gmail.com ↗</a>
         </div>
     </section>
