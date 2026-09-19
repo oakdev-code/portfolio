@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oakdev-code.github.io/portfolio/sitemap.xml

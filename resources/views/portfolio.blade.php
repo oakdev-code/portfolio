@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Oakdev — Lucas Carvalho. Desenvolvedor Full Stack, especialista em IA aplicada, automação e implantação de sistemas.">
+    <meta name="author" content="Lucas Carvalho — Oakdev">
+    <meta name="theme-color" content="#0b090a">
+    <link rel="canonical" href="{{ config('app.url') }}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Oakdev | Lucas Carvalho">
+    <meta property="og:description" content="Sistemas, automação e tecnologia para operações reais.">
+    <meta property="og:url" content="{{ config('app.url') }}">
+    <meta property="og:image" content="{{ asset('images/oakdev-social-card.svg') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Oakdev | Lucas Carvalho">
+    <meta name="twitter:description" content="Sistemas, automação e tecnologia para operações reais.">
+    <meta name="twitter:image" content="{{ asset('images/oakdev-social-card.svg') }}">
     <title>Oakdev | Lucas Carvalho</title>
     <link rel="icon" href="{{ asset('images/favicon.svg') }}" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+        @json([
+            '@context' => 'https://schema.org',
+            '@type' => 'Person',
+            'name' => 'Lucas Carvalho',
+            'alternateName' => 'Oakdev',
+            'url' => config('app.url'),
+            'sameAs' => [
+                'https://github.com/oakdev-code',
+                'https://www.linkedin.com/in/lucas-carvalho-726b97165/',
+            ],
+            'jobTitle' => 'Analista de Sistemas e Desenvolvedor Full Stack',
+        ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
+    </script>
     <style>
         :root { --bg:#0b090a; --surface:#171113; --surface-2:#211619; --text:#fff5f5; --muted:#c1abad; --line:#3a2025; --red:#f04452; --red-dark:#9f2635; --rose:#ff7a86; }
         * { box-sizing:border-box; }
