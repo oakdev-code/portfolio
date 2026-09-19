@@ -32,7 +32,7 @@ A landing page estática é publicada automaticamente no GitHub Pages a partir d
 
 https://oakdev-code.github.io/portfolio/
 
-O Laravel continua sendo a fonte principal do projeto. Sempre que a apresentação pública mudar, atualize também `docs/index.html` e envie para a branch `main`.
+O Laravel continua sendo a fonte principal do projeto. Sempre que a apresentação pública mudar, atualize também `docs/index.html` e envie para a branch `main`. O GitHub Pages republica a versão estática automaticamente.
 
 ## Próximas etapas
 
