@@ -86,6 +86,8 @@
         .card h3 { margin:0 0 10px; font-size:19px; } .card p { color:var(--muted); margin:0; font-size:15px; }
         .icon { color:var(--red); font:22px "DM Mono", monospace; margin-bottom:20px; }
         .stack { display:flex; flex-wrap:wrap; gap:10px; }
+        .compact-stack { margin-top:34px; padding-top:22px; border-top:1px solid var(--line); }
+        .stack-label { display:block; color:var(--muted); font-size:13px; margin-bottom:12px; }
         .tag { border:1px solid var(--line); border-radius:999px; color:#c9d7e8; padding:8px 13px; font:13px "DM Mono", monospace; background:var(--surface); }
         .case { display:flex; flex-direction:column; justify-content:space-between; min-height:220px; }
         .case-label { color:var(--rose); font:12px "DM Mono", monospace; text-transform:uppercase; }
@@ -126,7 +128,7 @@
     <a class="brand" href="/" aria-label="Oakdev — Lucas Carvalho"><img src="{{ asset('images/oakdev-logo.svg') }}" alt="Oakdev"></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
     <nav id="menu-principal" class="nav-links" aria-label="Navegação principal">
-        <a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#ideias">Ideias</a><a href="#processo">Método</a><a href="#cases">Cases</a><a href="#contato">Contato</a>
+        <a href="#solucoes">Soluções</a><a href="#processo">Método</a><a href="#cases">Experiência</a><a href="#contato">Contato</a>
     </nav>
 </header>
 
@@ -164,64 +166,33 @@
         <div class="signal"><strong>Produção</strong><span>implantação e sustentação</span></div>
     </div>
 
-    <section id="sobre" class="reveal">
+    <section id="solucoes" class="reveal">
         <div class="container">
-            <div class="section-label">01 / sobre</div>
-            <h2>Experiência aplicada,<br>não só teoria.</h2>
-            <p class="section-intro">Atuo em diferentes contextos: produtos digitais, serviços, operações internas, integrações e automações. Começo entendendo o objetivo e o público, analiso o processo, construo a solução e acompanho a entrega. Projetos corporativos podem ser confidenciais; por isso, apresento capacidades sem expor código ou dados de clientes.</p>
+            <div class="section-label">01 / soluções</div>
+            <h2>O que posso criar<br>com você.</h2>
+            <p class="section-intro">Você não precisa chegar com a solução pronta. Conte o objetivo e eu ajudo a transformar a ideia em algo claro, utilizável e possível de evoluir.</p>
             <div class="grid">
-                <article class="card"><div class="icon">01</div><h3>Produtos digitais</h3><p>Plataformas, portais e aplicações web pensadas para uma experiência clara e uma base pronta para crescer.</p></article>
-                <article class="card"><div class="icon">02</div><h3>Automação e IA</h3><p>Uso IA, integrações e workflows para reduzir trabalho repetitivo e criar novas formas de entregar valor.</p></article>
-                <article class="card"><div class="icon">03</div><h3>Sistemas conectados</h3><p>APIs e integrações para fazer dados, serviços e pessoas trabalharem a partir de informações mais organizadas.</p></article>
+                <article class="card"><div class="icon">01</div><h3>Sites e landing pages</h3><p>Presença profissional para apresentar serviços, divulgar uma oferta ou transformar visitas em conversas.</p></article>
+                <article class="card"><div class="icon">02</div><h3>Produtos e plataformas</h3><p>Portais, áreas de membros e aplicações web para entregar conteúdo, serviço ou uma experiência digital.</p></article>
+                <article class="card"><div class="icon">03</div><h3>Sistemas sob medida</h3><p>Ferramentas para organizar clientes, tarefas, pedidos, agenda ou qualquer rotina que dependa de controles espalhados.</p></article>
+                <article class="card"><div class="icon">04</div><h3>Automação e IA</h3><p>Fluxos inteligentes para reduzir trabalho repetitivo, apoiar equipes e criar novas formas de entregar valor.</p></article>
+                <article class="card"><div class="icon">05</div><h3>Integrações</h3><p>Conexões entre APIs, pagamentos, CRM, e-mail, WhatsApp e outras ferramentas que já fazem parte do negócio.</p></article>
+                <article class="card"><div class="icon">06</div><h3>Painéis e dados</h3><p>Dashboards para reunir informações importantes e facilitar o acompanhamento e a tomada de decisão.</p></article>
             </div>
-        </div>
-    </section>
-
-    <section id="expertise" class="reveal">
-        <div class="container">
-            <div class="section-label">02 / expertise</div>
-            <h2>Ferramentas para transformar<br>ideias em operação.</h2>
-            <p class="section-intro">A tecnologia acompanha o contexto: criar um produto digital, automatizar uma etapa, integrar serviços ou dar mais clareza para uma decisão.</p>
-            <div class="stack">
-                @foreach (['PHP', 'Laravel', 'JavaScript', 'HTML & CSS', 'SQL', 'Docker', 'REST APIs', 'Git & GitHub', 'Claude Code', 'Gemini', 'ChatGPT', 'Skills & Agents', 'Automação', 'Produtos digitais'] as $technology)
-                    <span class="tag">{{ $technology }}</span>
-                @endforeach
-            </div>
-        </div>
-    </section>
-
-    <section id="servicos" class="reveal">
-        <div class="container">
-            <div class="section-label">03 / como posso ajudar</div>
-            <h2>Problema primeiro.<br>Tecnologia depois.</h2>
-            <p class="section-intro">Você não precisa começar sabendo qual tecnologia usar. Eu entendo o processo, encontro o gargalo e proponho uma solução que possa ser usada, mantida e evoluída.</p>
-            <div class="service-grid">
-                <article class="card service-card featured"><div><div class="service-number">01 — PRODUTO</div><h3>Produtos digitais</h3><p>Transformo uma ideia em uma experiência utilizável: portal, plataforma ou aplicação web com base para validar e evoluir.</p></div><span class="tag">Da ideia ao produto</span></article>
-                <article class="card service-card"><div><div class="service-number">02 — AUTOMAÇÃO</div><h3>Automação e IA</h3><p>Conecto ferramentas e crio fluxos para acelerar tarefas, apoiar equipes e abrir espaço para novas possibilidades.</p></div><span class="tag">Mais capacidade</span></article>
-                <article class="card service-card"><div><div class="service-number">03 — INTEGRAÇÃO</div><h3>Sistemas conectados</h3><p>Integro APIs, dados e serviços para que diferentes partes do negócio compartilhem informação sem depender de controles manuais.</p></div><span class="tag">Tudo conversando</span></article>
-            </div>
-        </div>
-    </section>
-
-    <section id="ideias" class="reveal">
-        <div class="container">
-            <div class="section-label">04 / possibilidades</div>
-            <h2>Algumas ideias para tirar do papel.</h2>
-            <p class="section-intro">Nem todo projeto começa com uma especificação pronta. Estas são algumas possibilidades de solução para problemas comuns de empresas, profissionais e produtos digitais.</p>
-            <div class="grid">
-                <article class="card"><div class="icon">01</div><h3>Site que apresenta e converte</h3><p>Uma presença profissional para explicar seu trabalho, mostrar serviços e transformar visitas em conversas.</p></article>
-                <article class="card"><div class="icon">02</div><h3>Landing page para uma oferta</h3><p>Uma página objetiva para divulgar um serviço, curso, produto digital ou lançamento e orientar o próximo passo.</p></article>
-                <article class="card"><div class="icon">03</div><h3>Área de membros</h3><p>Um espaço para entregar cursos, materiais, comunidade ou acompanhamento com acesso organizado.</p></article>
-                <article class="card"><div class="icon">04</div><h3>Sistema para substituir planilhas</h3><p>Uma aplicação sob medida para organizar clientes, pedidos, agenda, tarefas ou informações da rotina.</p></article>
-                <article class="card"><div class="icon">05</div><h3>Ferramentas que conversam</h3><p>Integrações entre formulário, CRM, pagamento, e-mail, WhatsApp ou outras ferramentas que você já usa.</p></article>
-                <article class="card"><div class="icon">06</div><h3>Painel para enxergar o negócio</h3><p>Um dashboard que reúne dados importantes e transforma informação espalhada em acompanhamento mais simples.</p></article>
+            <div class="compact-stack">
+                <span class="stack-label">Ferramentas que podem entrar no projeto</span>
+                <div class="stack">
+                    @foreach (['PHP', 'Laravel', 'JavaScript', 'SQL', 'Docker', 'REST APIs', 'Git & GitHub', 'Claude Code', 'Gemini', 'ChatGPT', 'Skills & Agents'] as $technology)
+                        <span class="tag">{{ $technology }}</span>
+                    @endforeach
+                </div>
             </div>
         </div>
     </section>
 
     <section id="processo" class="reveal">
         <div class="container">
-            <div class="section-label">05 / método Oakdev</div>
+            <div class="section-label">02 / método Oakdev</div>
             <h2>Da ideia ao próximo passo.</h2>
             <div class="process">
                 <div class="process-step"><span class="service-number">01</span><strong>Entender</strong><p>Conversar sobre o objetivo, o público e o problema que precisa ser resolvido.</p></div>
@@ -234,7 +205,7 @@
 
     <section id="cases" class="reveal">
         <div class="container">
-            <div class="section-label">06 / experiência</div>
+            <div class="section-label">03 / experiência</div>
             <h2>Cases e frentes de trabalho.</h2>
             <p class="section-intro">Nem todo projeto pode ser publicado. Ainda assim, é possível explicar o tipo de problema, a solução construída e como o trabalho melhora a operação sem expor informações sensíveis.</p>
             <div class="grid">
@@ -277,7 +248,7 @@
 
     <section id="contato" class="reveal">
         <div class="container contact">
-            <div>            <div class="section-label">07 / contato</div><h2>Vamos tirar sua ideia do papel.</h2><p class="section-intro">Conte o que você quer criar, melhorar ou automatizar. A primeira conversa serve para entender o cenário e identificar um próximo passo possível.</p></div>
+            <div>            <div class="section-label">04 / contato</div><h2>Vamos tirar sua ideia do papel.</h2><p class="section-intro">Conte o que você quer criar, melhorar ou automatizar. A primeira conversa serve para entender o cenário e identificar um próximo passo possível.</p></div>
             <a class="button primary" href="mailto:luccaosilva10@gmail.com">luccaosilva10@gmail.com ↗</a>
         </div>
     </section>
