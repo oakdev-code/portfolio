@@ -22,8 +22,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script type="application/ld+json">
-        @json([
+    @php
+        $structuredData = json_encode([
             '@context' => 'https://schema.org',
             '@type' => 'Person',
             'name' => 'Lucas Carvalho',
@@ -34,8 +34,9 @@
                 'https://www.linkedin.com/in/lucas-carvalho-726b97165/',
             ],
             'jobTitle' => 'Analista de Sistemas e Desenvolvedor Full Stack',
-        ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
-    </script>
+        ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+    @endphp
+    <script type="application/ld+json">{!! $structuredData !!}</script>
     <style>
         :root { --bg:#0b090a; --surface:#171113; --surface-2:#211619; --text:#fff5f5; --muted:#c1abad; --line:#3a2025; --red:#f04452; --red-dark:#9f2635; --rose:#ff7a86; }
         * { box-sizing:border-box; }
